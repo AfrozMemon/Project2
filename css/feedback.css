@@ -1,0 +1,173 @@
+*{
+	margin:0;
+	padding:0;
+	overflow:hidden;
+}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+ body{
+	margin:0;
+	padding:0;
+	background-image: url('../images/header.jpg');
+	display: flex;
+	background-size: cover;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-repeat: no-repeat;
+	background-position: center;
+	font-family:"Montserrat", sans-serif;
+ }
+ 
+.container{
+	text-align: center;
+	justify-content: center;
+	align-items:center;
+	min-height:600px;
+	width:600px;
+	margin:10px;
+	background: linear-gradient(#00ff00,10%,#fff);
+	box-shadow: 0 0 20px 4px green;
+	border: 2px solid #bea;
+	border-radius: 10px;
+	transition:10s;
+	overflow: hidden;
+}
+
+h2{
+	font-size: 40px;
+	user-select: none;
+	text-transform: uppercase;
+}
+
+
+.form{
+	margin: 30px;
+	box-sizing: border-box;
+}
+
+.user input{
+	width: 400px;
+	height: 30px;
+	margin-top:5%;
+	border:none;
+	background: transparent;
+	border-bottom: 3px solid #fff;
+	font-size: 20px;
+	outline: none;
+	
+	border-radius: 50px;
+}
+
+.username input{
+	width: 400px;
+	height: 30px;
+	margin-top:3%;
+	border:none;
+	background: transparent;
+	border-bottom: 3px solid #fff;
+	font-size: 20px;
+	outline:none;
+
+	border-radius: 50px;
+}
+
+.user input::placeholder{
+	color:black;
+}
+
+.username input::placeholder{
+	color: black;
+}
+
+textarea{
+	width: 400px;
+	height: 200px;
+	background: linear-gradient(#00ff00,10%,#fff);
+	box-shadow: 0 0 20px 4px green;
+	resize: none;
+	margin-top: 3%;
+	padding-top:10px;
+	text-align: center;
+	font-size: 18px;
+	border-radius: 50px;
+}
+
+textarea::placeholder{
+	color: black;
+}
+.sub{
+	margin-top: 15%;
+	position:relative;
+}
+
+.sub input{
+	font-size: 20px;
+	width: 400px;
+	height: 40px;
+	border-radius: 50px;
+	background:  linear-gradient(#00ff00,10%,#fff);
+	box-shadow: 0 0 20px 4px green;
+	resize: none;
+	color: black;
+
+}
+
+.sub input[type = 'submit']:active{
+	border-color: black; 
+}
+
+.rating{
+	position: absolute;
+	margin-left: 50px;
+	display:flex;
+	flex-direction: row-reverse;
+}
+
+.rating input{
+	display: none;
+}
+
+.rating label img{
+	width: 50px;
+}
+
+.rating label{
+	position: relative;
+	width: 0px;
+	height: 120px;
+	cursor: pointer;
+	transition: 0.5s;
+	filter: grayscale(1);
+	text-align: center;
+	opacity:0;
+}
+
+.rating:hover label{
+	width: 100px;
+	opacity: 0.2;
+}
+
+.rating input:hover + label,
+.rating input:checked + label{
+	opacity: 1;
+	width: 100px;
+	filter: grayscale(0);
+}
+
+.rating label h4{
+	font-size:14px;
+	font-weight: 500;
+	color:black;
+	white-space:nowrap;
+	opacity:0;
+	transform: translateY(-50px) scale(0);
+	padding-top: 0px;
+	transition: 0.5s;
+}
+
+.rating input:hover + label h4,
+.rating input:checked + label h4{
+	transform: translateY(0) scale(1);
+	opacity: 1;
+}
+	

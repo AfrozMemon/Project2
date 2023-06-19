@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+	<meta charset ="UTF-8">
+	<meta name = "viewport" content = "width = device-width, initial-scale=1.0">
+	<title>Feedback</title>
+	<link rel = "stylesheet" href = "css/feedback.css">
+	<!--<link rel = "stylesheet" href = "JS/feedback.js">-->
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+	function sendEmail() {
+var em =document.myform.email.value;
+var us =document.myform.username.value;
+var ta =document.myform.textarea.value;
+Email.send({
+Host: "smtp.gmail.com",
+Username : "a056vaibhavsingala@gmail.com",
+Password : "aweguorttgdktewy",
+To:"afrozejpatel@gmail.com",
+From : "a056vaibhavsingala@gmail.com",
+Subject : "Feedback",
+Body : "Name:   " +us +"  "+"         Comments:  "+ta,
+}).then(
+alert("Thanks for your Feedback")
+);
+}
+</script>
+	
+	
+</head>
+
+
+<body>
+	<div class ="container">
+		<form name="myform" id="form" method="post" action="#" onsubmit="return sendEmail();">
+			<div class ="form">
+				<h2>Send Feedback</h2>
+				<div class ="user">
+					<input type="email" name = "email" placeholder="Enter Your Email" id = "email" required>
+				</div>
+				<div class = "username">
+					<input type = "text" placeholder = "Enter Username" id = "username" required>
+				</div>
+				<textarea placeholder = "Enter Your Message" id = "textarea" required>
+				</textarea>
+								
+				<div class="rating">
+				
+					<input type = "radio" name = "emoji" id = "emoji1" checked>
+					<label for  = "emoji1">
+						<img src = "images/in-love.png" title = "Loved">
+						<h4>Loved It</h4>
+					</label>
+					
+					<input type = "radio" name = "emoji" id = "emoji2" checked>
+					<label for  = "emoji2">
+						<img src = "images/Satisfactory.png" title = "Satisfactory">
+						<h4>Satisfactory</h4>
+					</label>
+					
+					<input type = "radio" name = "emoji" id = "emoji3" checked>
+					<label for  = "emoji3">
+						<img src = "images/happy.png" title = "Happy">
+						<h4>Happy</h4>
+					</label>
+					
+					<input type = "radio" name = "emoji" id = "emoji4" checked>
+					<label for  = "emoji4">
+						<img src = "images/NotGood.png" title = "NotGood">
+						<h4>Not Good</h4>
+					</label>
+					
+					<input type = "radio" name = "emoji" id = "emoji5" checked>
+					<label for  = "emoji5">
+						<img src = "images/in-love.png" title = "Loved">
+						<h4>Loved It</h4>
+					</label>
+					
+				
+				</div>
+					<div class = "sub">
+						<input type = "submit" name = "submit" value = "Submit" onclick="myFunction()">
+					</div>
+						
+			</div>
+		</form>
+	</div>
+	
+	
+	
+	
+	
+</body>
+</html>
+	

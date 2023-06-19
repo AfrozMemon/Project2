@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>Add 2 Cart</title>
+	<meta charset="UTF-8">
+	<link rel = "stylesheet" type ="text/css" href="css/Add2Cart.css">
+	<link rel = "stylesheet" type ="text/javascript" href="JS/Add2Cart.js">
+	<meta name = "viewport" content = "width = device-width ,initial-scale =1.0">
+	<link rel="stylesheet" href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+	</head>
+<body>
+	<header>
+		<div class = "row clearfix">
+		<img src="./images/logo5.png" alt="" class= "logo">
+		</div>
+	</header>
+		<div class  ="container-fluid mt-5">
+		<h2 class="mb-5 text-center">Shopping-cart</h2>
+	<div class="row justify-content-center">
+		<div class ="col-md-8">
+	<div class ="table-responsive">
+	<table id = "myTable" class="table">
+	<thead>
+		<tr>
+			<th>Product</th>
+			<th>Name</th>
+			<th>Quantity</th>
+			<th>Price</th>
+			<th class ="text-right"><span id ="amount" class ="amount">Amount</span>
+			</th>
+		</tr>
+		</thead>
+	<tbody>
+	<tr>
+		<td>
+		<div class ="product-img">
+			<div class ="img-prdct">
+			<img src="images/latte.jpg">
+			</div>
+		</div>
+		</td>
+		<td>
+			<p>Latte</p>
+		</td>
+		<td>
+			<div class = "button-container">
+				<button class="cart-qty-plus" type="button" value = "+">+</button>
+				<input type = "text" name="Quantity" min = "0" class="qty form-control" value="0"/>
+				<button class="cart-qty-minus" type="button" value = "-">-</button>
+			</div>
+		</td>
+		<td>
+			<input type = "text" value = "72" class ="price form-control" disabled>
+		</td>
+		<td>
+			<td align ="right">$<span id = "amount" class= "amount">0</span>
+			</td>
+		</td>
+		</tr>
+		<tr>
+		<td>
+		<div class ="product-img">
+			<div class ="img-prdct">
+			<img src="images/white_forest_pastry.jpg">
+			</div>
+		</div>
+		</td>
+		<td>
+			<p>White Forest Pastry</p>
+		</td>
+		<td>
+			<div class = "button-container">
+				<button class="cart-qty-plus" type="button" value = "+">+</button>
+				<input type = "text" name="Quantity" min = "0" class="qty form-control" value="0"/>
+				<button class="cart-qty-minus" type="button" value = "-">-</button>
+			</div>
+		</td>
+		<td>
+			<input type = "text" value = "150" class ="price form-control" disabled>
+		</td>
+		<td>
+			<td align ="right">$<span id = "amount" class= "amount">0</span>
+			</td>
+		</td>
+		</tr>
+		<tr>
+		<td>
+		<div class ="product-img">
+			<div class ="img-prdct">
+			<img src="images/greenTea.jpg">
+			</div>
+		</div>
+		</td>
+		<td>
+			<p>Green Tea</p>
+		</td>
+		<td>
+			<div class = "button-container">
+				<button class="cart-qty-plus" type="button" value = "+">+</button>
+				<input type = "text" name="Quantity" min = "0" class="qty form-control" value="0"/>
+				<button class="cart-qty-minus" type="button" value = "-">-</button>
+			</div>
+		</td>
+		<td>
+			<input type = "text" value = "100" class ="price form-control" disabled>
+		</td>
+		<td>
+			<td align ="right">$<span id = "amount" class= "amount">0</span>
+			</td>
+		</td>
+		</tr>
+		<tr>
+		<td>
+		<div class ="product-img">
+			<div class ="img-prdct">
+			<img src="images/BreadPastry.jpg">
+			</div>
+		</div>
+		</td>
+		<td>
+			<p>Bread Pastry</p>
+		</td>
+		<td>
+			<div class = "button-container">
+				<button class="cart-qty-plus" type="button" value = "+">+</button>
+				<input type = "text" name="Quantity" min = "0" class="qty form-control" value="0"/>
+				<button class="cart-qty-minus" type="button" value = "-">-</button>
+			</div>
+		</td>
+		<td>
+			<input type = "text" value = "180" class ="price form-control" disabled>
+		</td>
+		<td>
+			<td align ="right">$<span id = "amount" class= "amount">0</span>
+			</td>
+		</td>
+		</tr>
+	</tbody>
+	<tfoot>
+		<tr>
+			<td colspan ="4"></td>
+			<td align ="right" font-size="150%">
+			<strong>TOTAL = $ <span id = "total" class ="total">0</span>
+			</strong>
+			</td>
+		</tr>
+	</tfoot>
+	</table>
+	</div>
+	</div>
+	</div>
+	</div>
+<script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+<script src = "JS/Add2Cart.js"></script>
+
+</body>
+</html>
